@@ -6,11 +6,32 @@ package com.example.kotlin_study2
 
 //람다식 기본 정의
 // val lamdaname : type = {argmentlist -> body}
-val square :(Int)->(Int) = {number -> number*number}
-var nameage ={ name : String , age : Int -> "my name is ${name}, age is ${age}"}
+//매개 변수 o 리턴 o
+fun sqare(number : Int){
+    val squarenumber = number*number
+}
+val squareLambda :(Int)->(Int) = {
+        number -> number*number
+}
+var nameage ={
+        name : String , age : Int -> "my name is ${name}, age is ${age}"
+}
+//매개 변수 X 리턴값 x
+fun someFunction(){
+    println("someFunction 함수를 호출하였습니다")
+}
+
+//매개 변수 x 리린턴값 x
+val someLambda : () -> Unit = {
+    println("someLambda가 호출되었습니다")
+}
+
 fun main(){
-    println(square(12))
+    println(squareLambda(12))
     println(nameage("chung", 26))
+
+    someFunction()
+    someLambda.invoke()
 
     val a = "han said"
     val b = "kim said"
@@ -50,3 +71,5 @@ val calculate: (Int)-> String = {
 fun invokeLamda( lamda :(Double) -> Boolean): Boolean {
     return lamda(4.123)
 }
+
+//람다
