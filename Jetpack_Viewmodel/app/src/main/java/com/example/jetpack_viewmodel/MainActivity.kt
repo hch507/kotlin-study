@@ -11,9 +11,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     val TAG : String ="로그"
-    val userinput = editText.toString().toInt()
+
+    lateinit var myviewModel: ViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var myviewModel: ViewModel
+
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,10 +29,12 @@ class MainActivity : AppCompatActivity() {
             })
 
         plus_button.setOnClickListener(View.OnClickListener {
+            val userinput = editText.text.toString().toInt()
             myviewModel.changeValue(ActionType.PlUS,userinput)
         })
 
         minus_button.setOnClickListener(View.OnClickListener {
+            val userinput = editText.text.toString().toInt()
             myviewModel.changeValue(ActionType.MINUS,userinput)
         })
 
