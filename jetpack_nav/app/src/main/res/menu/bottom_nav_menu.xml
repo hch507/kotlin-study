@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeFragmnet"
         android:title="홈"
         android:icon="@drawable/ic_baseline_home_24"
         />
     <item
-        android:id="@+id/friendsFragment"
+        android:id="@+id/friendFragment"
         android:title="친구"
         android:icon="@drawable/ic_baseline_group_24"
         />
