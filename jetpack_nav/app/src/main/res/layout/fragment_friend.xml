@@ -2,9 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/homeFragment">
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/homeFragment"
+    tool:context="com.example.jetpack_nav.fragment.FriendFragment"
+    >
 
     <TextView
+        android:id="@+id/friendFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="친구 프레그먼트"/>

@@ -2,9 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/homeFragment">
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/homeFragment"
+    tool:context="com.example.jetpack_nav.fragment.MusicFragment">
 
     <TextView
+        android:id="@+id/musicFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="음악 프레그먼트"/>

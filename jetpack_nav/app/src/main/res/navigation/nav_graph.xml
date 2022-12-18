@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragmnet">
+
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.example.jetpack_nav.fragment.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.jetpack_nav.fragment.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/homeFragmnet"
+        android:name="com.example.jetpack_nav.fragment.HomeFragmnet"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>
